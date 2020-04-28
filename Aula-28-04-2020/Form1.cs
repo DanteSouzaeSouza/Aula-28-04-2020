@@ -19,12 +19,17 @@ namespace Aula_28_04_2020
 
         private void FrmPredictor_Load(object sender, EventArgs e)
         {
-
+            String mega = GenMega();
+            SetDiaMesData();
+            pnlNome.Visible = true;
+            pnlNome.Enabled = true;
+            pnlNumSorte.Visible = false;
+            pnlHoroscopo.Visible = false;
         }
 
 
 
-        private static String GenMega()
+        private static String GenMega() // gera o valor dos 6 números para a pessoa
         {
             int dz1, dz2, dz3, dz4, dz5, dz6;
             String megaNums = "";
@@ -42,7 +47,7 @@ namespace Aula_28_04_2020
         }
 
 
-        private static int GetRandom(int min, int max)
+        private static int GetRandom(int min, int max) // função que cria números de 2 dígitos aleatórios dentro de um intervalo
         {
             using (System.Security.Cryptography.RNGCryptoServiceProvider rng = new System.Security.Cryptography.RNGCryptoServiceProvider())
             {
@@ -53,9 +58,24 @@ namespace Aula_28_04_2020
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void btnPrever_Click(object sender, EventArgs e)
         {
 
+           
+        }
+
+
+        private void btnNumeros_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void SetDiaMesData()
+        {
+            // Set the Format type and the CustomFormat string.
+            dtpNiver.Format = DateTimePickerFormat.Custom;
+            dtpNiver.CustomFormat = "dd/MM";
+            dtpNiver.ShowUpDown = true;
         }
     }
 }
