@@ -34,7 +34,19 @@ namespace Aula_28_04_2020
             pnlHoroscopo.Visible = false;
         }
 
+        // formata o uso do DateTimePicker 
+        public void SetDiaMesData()
+        {
+            // determina que o dtpNiver terá um formato customizado
+            dtpNiver.Format = DateTimePickerFormat.Custom;
 
+            // infoma qual é esse formato customizado
+            dtpNiver.CustomFormat = "dd/MM";
+
+            // faz não deixar selecionar a data manualmente, obrigando a digitação
+            dtpNiver.ShowUpDown = true;
+        }
+        
         // gera o valor dos 6 números para a pessoa
         private static String GenMega() 
         {
@@ -67,12 +79,6 @@ namespace Aula_28_04_2020
                 return Math.Abs(value % max + min);
             }
         }
-
-
-
-
-
-
 
 
         private void btnPrever_Click(object sender, EventArgs e)
@@ -169,21 +175,6 @@ namespace Aula_28_04_2020
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void btnNumeros_Click(object sender, EventArgs e)
         {
             pnlHoroscopo.Visible = true;
@@ -196,24 +187,5 @@ namespace Aula_28_04_2020
             lblMega.Text = GenMega();
         }
 
-
-
-
-
-
-
-
-        // formata o uso do DateTimePicker 
-        public void SetDiaMesData()
-        {            
-            // determina que o dtpNiver terá um formato customizado
-            dtpNiver.Format = DateTimePickerFormat.Custom;
-
-            // infoma qual é esse formato customizado
-            dtpNiver.CustomFormat = "dd/MM";
-
-            // faz não deixar selecionar a data manualmente, obrigando a digitação
-            dtpNiver.ShowUpDown = true;
-        }
     }
 }
