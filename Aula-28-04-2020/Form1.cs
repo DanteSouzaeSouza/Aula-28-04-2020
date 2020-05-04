@@ -95,8 +95,8 @@ namespace Aula_28_04_2020
             DateTime sagitario = new DateTime(2020, 11, 22);
             DateTime capricornio = new DateTime(2020, 12, 22);
             DateTime aquario = new DateTime(2021, 01, 20);
-            DateTime peixes = new DateTime(2021, 03, 21);
-
+            DateTime peixes = new DateTime(2021, 02, 19);
+            DateTime ariesNext = new DateTime(2021, 03, 21);
 
             // Desativando o Panel pnlNome
             pnlNome.Enabled = false;
@@ -108,31 +108,66 @@ namespace Aula_28_04_2020
             // comparando os valores do aniversário com as datas de cada signo
             if (niver >= aries && niver < touro)
             {
-                // Captando o texto já existente no lblSigno e adicionando o texto Áries
-                lblSigno.Text = lblSigno.Text + "Áries";
-                lblSignoDesc.Text = "Descrição do Signo... ";
-                lblSignoTipo.Text = lblSignoTipo.Text + "de Fogo.";
+                lblSigno.Text += "Áries";
+                lblSignoDesc.Text = "Impulsivo, o ariano não pensa muito sobre seus atos. É aquele que primeiro age, depois reflete. Agitado, precisa de muita atividade para gastar a energia, senão pode ficar agressivo e explosivo.";
             }
             else if (niver >= touro && niver < gemeos)
             {
-                lblSigno.Text = lblSigno.Text + "Touro";
-                lblSignoDesc.Text = "Descrição do Signo... ";
-                lblSignoTipo.Text = lblSignoTipo.Text + "de Terra.";
+                lblSigno.Text += "Touro";
+                lblSignoDesc.Text = "Teimoso, o taurino é determinado e protetor. Precisa de segurança e estabilidade para ser feliz, e conquista isso com muito trabalho e concentração. Carinhoso, o taurino pode ser ciumento com quem ama.";
             }
             else if (niver >= gemeos && niver < cancer)
             {
-                lblSigno.Text = lblSigno.Text + "Gêmeos";
-                lblSignoDesc.Text = "Descrição do Signo... ";
-                lblSignoTipo.Text = lblSignoTipo.Text + "de Ar.";
+                lblSigno.Text += "Gemeos";
+                lblSignoDesc.Text = "Espontâneo e um pouco instável, o geminiano é uma verdadeira caixinha de surpresas. Como é volátil, muitas vezes nem mesmo o geminiano se entende, mas o importante é que ele está sempre de bom humor e em busca de aventuras.";
             }
             else if (niver >= cancer && niver < leao)
             {
-                lblSigno.Text = lblSigno.Text + "Câncer";
-                lblSignoDesc.Text = "Descrição do Signo... ";
-                lblSignoTipo.Text = lblSignoTipo.Text + "de Água.";
+                lblSigno.Text += "Cancer";
+                lblSignoDesc.Text = "";
             }
-
+            else if (niver >= leao && niver < virgem)
+            {
+                lblSigno.Text += "Leão";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= virgem && niver < libra)
+            {
+                lblSigno.Text += "Virgem";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= libra && niver < escorpiao)
+            {
+                lblSigno.Text += "Libra";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= escorpiao && niver < sagitario)
+            {
+                lblSigno.Text += "Escorpiao";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= sagitario && niver < capricornio)
+            {
+                lblSigno.Text += "Sagitário";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= capricornio && niver < aquario)
+            {
+                lblSigno.Text += "Capricórnio";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= aquario && niver < peixes)
+            {
+                lblSigno.Text += "Aquário";
+                lblSignoDesc.Text = "";
+            }
+            else if (niver >= peixes && niver < ariesNext)
+            {
+                lblSigno.Text += "Peixes";
+                lblSignoDesc.Text = "";
+            }
         }
+
 
 
 
@@ -151,7 +186,14 @@ namespace Aula_28_04_2020
 
         private void btnNumeros_Click(object sender, EventArgs e)
         {
-            //String mega = GenMega();
+            pnlHoroscopo.Visible = true;
+            pnlNumSorte.Visible = true;
+
+            pnlNome.Enabled = false;
+            pnlHoroscopo.Enabled = false;
+            pnlNumSorte.Enabled = true;
+
+            lblMega.Text = GenMega();
         }
 
 
