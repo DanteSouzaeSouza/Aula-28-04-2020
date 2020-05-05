@@ -107,8 +107,9 @@ namespace Aula_28_04_2020
             // Desativando o Panel pnlNome
             pnlNome.Enabled = false;
 
-            // Escondendo os outros dois Panels
+            // Tornando o pnlHoroscopo visível
             pnlHoroscopo.Visible = true;
+            // Escondendo o pnlNumSorte
             pnlNumSorte.Visible = false;
 
             // comparando os valores do aniversário com as datas de cada signo
@@ -177,13 +178,18 @@ namespace Aula_28_04_2020
 
         private void btnNumeros_Click(object sender, EventArgs e)
         {
+            // deixando panels visíveis
             pnlHoroscopo.Visible = true;
             pnlNumSorte.Visible = true;
 
+            // desativando panels já usados
             pnlNome.Enabled = false;
             pnlHoroscopo.Enabled = false;
+
+            // ativando pnlNumSorte
             pnlNumSorte.Enabled = true;
 
+            // passando os 6 números para o label exibido no form
             lblMega.Text = GenMega();
         }
 
