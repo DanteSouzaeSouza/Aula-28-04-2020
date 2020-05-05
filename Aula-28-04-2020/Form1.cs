@@ -43,7 +43,7 @@ namespace Aula_28_04_2020
             // infoma qual é esse formato customizado
             dtpNiver.CustomFormat = "dd/MM";
 
-            // faz não deixar selecionar a data manualmente, obrigando a digitação
+            // Bloqueia selecionar a data manualmente, obrigando a digitação
             dtpNiver.ShowUpDown = true;
         }
         
