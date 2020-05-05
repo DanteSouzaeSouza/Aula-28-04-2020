@@ -130,47 +130,47 @@ namespace Aula_28_04_2020
             else if (niver >= cancer && niver < leao)
             {
                 lblSigno.Text += "Cancer";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Família é a palavra-chave para o canceriano. Tranquilo e emotivo, gosta de ficar em casa, fazer programas com quem ama e curtir momentos com os parentes. Curioso, faz amizade com facilidade, mas pode ser um pouco sensível.";
             }
             else if (niver >= leao && niver < virgem)
             {
                 lblSigno.Text += "Leão";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Este é signo que veio para brilhar. O leonino gosta de chamar a atenção e ser o centro do mundo, mas também é muito amável e leal. Simpático e comunicativo, o nativo de leão pode ser um pouco ciumento e inseguro.";
             }
             else if (niver >= virgem && niver < libra)
             {
                 lblSigno.Text += "Virgem";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Perspicaz e inteligente, o virginiano está acostumado com o sucesso, por isso se cobra muito, assim como aos demais. Por isso, pode ser um pouco rígido e magoar quem ama. Tímido, prefere programas tranquilos a grandes eventos.";
             }
             else if (niver >= libra && niver < escorpiao)
             {
                 lblSigno.Text += "Libra";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "O libriano gosta do que é belo e harmonioso. Não gosta de conflitos e por isso tenta ser imparcial em debates e brigas. Indeciso, pode demorar muito para escolher coisas simples, como o que comer ou vestir. Bom gosto define este signo.";
             }
             else if (niver >= escorpiao && niver < sagitario)
             {
                 lblSigno.Text += "Escorpiao";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Determinado, o escorpiano vai até o fim para conquistar os seus objetivos. Sensual e romântico, gosta de estar em relacionamentos, mas pode ser desconfiado enquanto não se sentir seguro com a pessoa.";
             }
             else if (niver >= sagitario && niver < capricornio)
             {
                 lblSigno.Text += "Sagitário";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Um signo de bem com a vida, que está sempre em busca de ação e que vive rodeado de amigos. Este é o signo de sagitário, que é sonhador e adora conhecer pessoas e lugares novos.";
             }
             else if (niver >= capricornio && niver < aquario)
             {
                 lblSigno.Text += "Capricórnio";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Trabalhador, tímido e educado, o capricórnio pode passar uma imagem de fechado e até mesmo antipático, mas é que ele eprecisa confiar em quem está ao seu lado para se abrir totalmente. Com paciência, ele se mostra um amigo leal e um companheiro fiel.";
             }
             else if (niver >= aquario && niver < peixes)
             {
                 lblSigno.Text += "Aquário";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Independente, o aquariano preza muito por sua liberdade. Gosta de viajar, sair e conhecer pessoas novas. Tem uma mente aberta e gosta de tudo o que é inovador e moderno, desde roupas e tecnologia, até mesmo atitudes comportamentais.";
             }
             else if (niver >= peixes && niver < ariesNext)
             {
                 lblSigno.Text += "Peixes";
-                lblSignoDesc.Text = "";
+                lblSignoDesc.Text = "Este é o signo mais romântico do zodíaco. Sonhador e carinhoso, ele está sempre preocupado com o bem estar dos outros. Sensível e carinhoso, acredita em contos de fadas e acha que todos merecem um final feliz.";
             }
         }
 
